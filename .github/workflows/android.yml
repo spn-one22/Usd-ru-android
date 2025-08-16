@@ -28,7 +28,7 @@ jobs:
         run: cd usd_rub_realtime_app && ./gradlew assembleDebug
 
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: app-debug
           path: usd_rub_realtime_app/app/build/outputs/apk/debug/app-debug.apk
